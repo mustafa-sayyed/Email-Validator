@@ -4,7 +4,7 @@ let apikey = "ema_live_YUJWjiVzeW5byC1ieu1SGHYYFmw8j1TH7qVHBo75";
 let str = ``;
 submit.addEventListener("click", (event) => {
     event.preventDefault();
-    resContent.innerHTML = `<img src="loading2.svg" width="50px">`;
+    resContent.innerHTML = `<img src="images/loading2.svg" width="50px">`;
     validateEmail();
 })
 
