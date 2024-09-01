@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header class="w-full h-[60px] bg-slate-900 text-white sticky top-0">
+      <nav class="w-[80vw] h-full mx-auto flex justify-between items-center">
+        <div class="logo">Email Validator</div>
+        <ul class="w-2/4 flex items-center justify-around list-none">
+          <li><a href="/" class="text-white">Home</a></li>
+          <li><a href="/" class="text-white">About</a></li>
+          <li><a href="/" class="text-white">Contact</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <div class="container min-h-screen flex justify-center items-start py-20">
+      <div class="w-fit p-8 rounded-lg">
+        <h1 class="text-4xl mb-8">Enter your email to validate</h1>
+        <div class="w-4/5">
+          <form action="">
+            <div class="inputfield">
+              <label for="email">Enter email:</label>
+              <input
+                type="text"
+                name="email"
+                id="email"
+                class="border-2 border-black rounded-md w-full text-black py-1.5 px-4 outline-none"
+              />
+            </div>
+            <button id="btn" class="py-1 px-3 border-2 border-black text-black rounded-md mx-auto mt-4">
+              Submit
+            </button>
+          </form>
+        </div>
+        <div class="result mt-6">
+            <h1 class="text-3xl mb-4">Your Result:</h1>
+            <div id="result-content">
+
+            </div>
+        </div>
+      </div>
+    </div>
+
+    <footer class="w-full h-16 bg-slate-900 flex justify-center items-center text-white">
+      All Rights are reserved to @Sayyed Mustafa &copy;2024
+    </footer>
+
+    <script src="script.js"></script>
+  </body>
+</html>
