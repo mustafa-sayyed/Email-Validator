@@ -10,6 +10,10 @@ submit.addEventListener("click", (event) => {
 
 const validateEmail = async () => {
     let email = document.getElementById("email").value;
+    if (!email) {
+        resContent.innerHTML = `Please Enter Email`;
+        return;
+    }
     let url = `https://api.emailvalidation.io/v1/info?apikey=${apikey}&email=${email}`;
     console.log(url);
     let reponse = await fetch(url);
