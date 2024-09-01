@@ -16,6 +16,8 @@ const validateEmail = async () => {
     console.log(reponse);
     let data = await reponse.json();
     console.log(data);
+    str = ``;
+    resContent.innerHTML = str;
     for (const key in data) {
         str += `<div>${key}: ${data[key]}</div>`
     }
